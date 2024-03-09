@@ -12,7 +12,8 @@ const corsOrigin={
     optionSuccessStatus:200,
 }*/
 app.use(cors())
-mongoose.connect("mongodb+srv://surajithalder088:5QeHdPhMee6TJkaq@cluster0.gilfff5.mongodb.net/",
+const mongo='mongodb+srv://surajithalder088:contact088@cluster0.uheejdb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+mongoose.connect(mongo,
 {useNewUrlParser:true,
 useUnifiedTopology:true})
 .then(
