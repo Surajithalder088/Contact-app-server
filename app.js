@@ -6,6 +6,11 @@ import cors from "cors";
 const app=express();
 app.use(express.json())
 
+
+const corsOrigin={
+    origin:['https://contact-app-client-ashen.vercel.app/'],
+    optionSuccessStatus:200,
+}
 app.use(cors())
 mongoose.connect("mongodb+srv://surajithalder088:5QeHdPhMee6TJkaq@cluster0.gilfff5.mongodb.net/",
 {useNewUrlParser:true,
