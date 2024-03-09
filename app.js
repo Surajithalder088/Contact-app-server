@@ -6,12 +6,12 @@ import cors from "cors";
 const app=express();
 app.use(express.json())
 
-/*
+
 const corsOrigin={
-    origin:['https://contact-app-client-5u6w.vercel.app/'],
+    origin:['https://cozy-beignet-5ddae4.netlify.app/'],
     optionSuccessStatus:200,
-}*/
-app.use(cors())
+}
+app.use(cors(corsOrigin))
 const mongo='mongodb+srv://surajithalder088:contact088@cluster0.uheejdb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
 mongoose.connect(mongo,
 {useNewUrlParser:true,
