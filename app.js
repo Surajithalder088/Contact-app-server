@@ -8,10 +8,10 @@ app.use(express.json())
 
 
 const corsOrigin={
-    origin:['https://contact-app-client-ashen.vercel.app/'],
+    origin:['https://contact-app-client-5u6w.vercel.app/'],
     optionSuccessStatus:200,
 }
-app.use(cors())
+app.use(cors(corsOrigin))
 mongoose.connect("mongodb+srv://surajithalder088:5QeHdPhMee6TJkaq@cluster0.gilfff5.mongodb.net/",
 {useNewUrlParser:true,
 useUnifiedTopology:true})
