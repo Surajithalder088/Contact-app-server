@@ -6,12 +6,12 @@ import cors from "cors";
 const app=express();
 app.use(express.json())
 
-
+/*
 const corsOrigin={
     origin:['https://contact-app-client-5u6w.vercel.app/'],
     optionSuccessStatus:200,
-}
-app.use(cors(corsOrigin))
+}*/
+app.use(cors())
 mongoose.connect("mongodb+srv://surajithalder088:5QeHdPhMee6TJkaq@cluster0.gilfff5.mongodb.net/",
 {useNewUrlParser:true,
 useUnifiedTopology:true})
