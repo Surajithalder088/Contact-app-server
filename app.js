@@ -20,6 +20,14 @@ useUnifiedTopology:true})
     ()=>{console.log("database connected")})
 .catch((e)=>console.log(e.messege))
 
+app.get("/",async(req,res)=>{
+   
+    try{   
+        res.status(200).json("alldata")
+
+}catch(err){res.status(400).json(err)
+}})
+
 app.get("/api/",async(req,res)=>{
    
     try{    const alldata=await User.find({})
