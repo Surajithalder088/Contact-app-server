@@ -7,12 +7,12 @@ const app=express();
 app.use(express.json())
 
 const clint='https://cozy-beignet-5ddae4.netlify.app/'
-/*
+
 const corsOrigin={
-    origin:['https://cozy-beignet-5ddae4.netlify.app/'],
+    origin:['https://contactclient.vercel.app/'],
     optionSuccessStatus:200,
-}*/
-app.use(cors())
+}
+app.use(cors(corsOrigin))
 const mongo='mongodb+srv://surajithalder088:contact088@cluster0.uheejdb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
 mongoose.connect(mongo,
 {useNewUrlParser:true,
